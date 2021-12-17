@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-gray-800 text-lg text-gray-300 m-0;
+  @apply bg-coal-500 text-lg text-gray-300 m-0;
 }
 
 code {
@@ -15,6 +15,6 @@ code {
     monospace;
 }
 
-a:hover {
-  @apply text-orange-500;
+.active{
+  @apply font-normal border-b-4 border-yellow-400;
 }

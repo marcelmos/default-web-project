@@ -5,12 +5,10 @@ export default function Homepage(){
         <main className='-mt-10'>
             <section className="px-24 py-24 h-full max-h-screen">
                 <div className="grid grid-cols-2">
-                    <div data-depth="0.2" className="flex flex-col justify-center w-2/3 h-2/3">
-                        <h2 className="text-8xl text-amber-400">Welcome!</h2>
-                        <hr className='opacity-50 py-2' />
-                        <p className="text-4xl">Welcome on my <span className="font-bold text-amber-400">Default Web</span></p>
+                    <div className="flex flex-col justify-center">
+                        <h2 className="font-medium text-7xl border-l-[20px] border-yellow-400 pl-4 pt-2 pb-20 ">Hi, I'm Marcel<br />a <span className='text-yellow-400'>web developer</span></h2>
                     </div>
-                    <div data-depth="0.6" className="relative">
+                    <div className="relative">
                         <img src="photo.png" className='h-1/2' alt="img" />
                     </div>
                 </div>
