@@ -5,7 +5,14 @@ module.exports = {
   theme: {
     extend: {
       height: {
+        '15': '3.75rem',
         'half-sreen': '50vh',
+      },
+      maxWidth: {
+        "400": "400px",
+      },
+      maxHeight: {
+        '15': '3.75rem',
       },
       "colors": {
         "coal": {
@@ -18,6 +25,7 @@ module.exports = {
           "600": "#2d282a",
           "700": "#231e20",
         },
+        "light": "#F4F2F0",
       },
     },
   },

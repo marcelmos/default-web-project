@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-coal-500 text-lg text-gray-300 m-0;
+  @apply bg-coal-500 text-lg text-light m-0;
 }
 
 code {
@@ -15,6 +15,22 @@ code {
     monospace;
 }
 
-.active{
-  @apply font-normal border-b-4 border-yellow-400;
+.active>a{
+  @apply font-bold border-l-4 border-yellow-400 px-2;
+}
+
+nav>ul>li>a{
+  @apply border-l-4 border-opacity-0 px-2;
+}
+nav>ul>li:hover>a{
+  @apply font-bold border-l-4 border-yellow-500 px-2;
+}
+
+form .form-input{
+  @apply border-2 border-transparent bg-transparent w-full my-7 py-5 px-6 text-2xl;
+  border-bottom: 4px solid #F4F2F0;
+}
+form .form-input:focus{
+  @apply border-2 border-yellow-400 border-opacity-20 bg-coal-400 outline-none;
+  border-bottom: 4px solid #FACC15;
 }
