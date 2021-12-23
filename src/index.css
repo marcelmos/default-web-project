@@ -34,3 +34,7 @@ form .form-input:focus{
   @apply border-2 border-yellow-400 border-opacity-20 bg-coal-400 outline-none;
   border-bottom: 4px solid #FACC15;
 }
+
+.section-header{
+  @apply text-4xl xl:text-6xl border-l-8 border-yellow-400 font-bold pl-4;
+}

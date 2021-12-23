@@ -27,6 +27,10 @@ module.exports = {
         },
         "light": "#F4F2F0",
       },
+      backgroundImage: {
+        'hero-pattern': "url('/public/img/hero-pattern.svg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [],
