@@ -19,6 +19,10 @@ code {
   @apply font-bold border-l-4 border-yellow-400 px-2;
 }
 
+ul:hover>li>a{
+  @apply font-light border-l-transparent;
+}
+
 nav>ul>li>a{
   @apply border-l-4 border-opacity-0 px-2;
 }

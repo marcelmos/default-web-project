@@ -1,7 +1,9 @@
+
+
 export default function FormSection(){
 
     return(
-        <section className="py-20 px-24">
+        <section id="contact-section" className="py-20 px-24">
             <div className="max-w-3xl flex flex-col justify-center mx-auto">
                 <h2 className='text-6xl'>Interested?</h2>
                 <p className='text-4xl'>Just <span className="text-yellow-400">send message</span> to me and let’s start <span className="italic text-yellow-400">talking...</span></p>
