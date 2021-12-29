@@ -46,6 +46,30 @@ form .form-input:focus{
   @apply text-4xl xl:text-6xl border-l-8 border-yellow-400 font-bold pl-4;
 }
 
+.faq-wrapper{
+  @apply max-w-3xl;
+}
+.faq-question {
+  @apply w-full px-6 py-3 font-bold text-3xl bg-coal-600;
+}
+.faq-question.opend {
+  @apply bg-coal-700;
+}
+.faq-question.opend:hover {
+  @apply bg-coal-600;
+}
+.faq-question:hover {
+  @apply cursor-pointer bg-coal-700;
+}
+.faq-answear {
+  max-height: 0;
+  @apply w-full px-11 border-b-2 border-yellow-400 mb-6 overflow-hidden;
+}
+.faq-answear.show{
+  max-height: 9999px !important;
+  @apply py-4;
+}
+
 #projects-section,
 #about-me-section,
 #contact-section,
