@@ -10,9 +10,12 @@ module.exports = {
       },
       maxWidth: {
         "400": "400px",
+        "250": "250px",
       },
       maxHeight: {
         '15': '3.75rem',
+        "250": "250px",
+        "800": "800px"
       },
       "colors": {
         "coal": {
