@@ -37,7 +37,7 @@ nav{
   #mobile-nav-panel{
     @apply fixed -left-800 top-0 bottom-0 transition-all;
     transition-duration: 1.5s;
-    
+
     &.manu-opend{
       @apply fixed left-0 top-0 bottom-0 transition-all;
       transition-duration: .5s;
@@ -146,6 +146,21 @@ footer {
 
     }
 
+  }
+}
+
+#home-section {
+  @media (min-width: 768px) {
+    .hero-img{
+      @apply transition-all duration-300;
+
+      &:hover{
+        transform: scale(102%) rotate(2deg);
+        filter: drop-shadow(0 5px 10px rgba(255, 255, 255, 0.25));
+
+        @apply transition-all duration-700;
+      }
+    }
   }
 }
 
@@ -265,14 +280,14 @@ form {
     }
 
     a.external-link{
-      
+
       svg{
         @apply opacity-50;
       }
 
       &:hover{
         @apply text-yellow-400;
-        
+
         svg{
           @apply opacity-80;
         }
@@ -321,11 +336,20 @@ form {
       }
     }
 
-    .experience-company{
+    .experience-company {
       @apply cursor-pointer;
+
+      span:last-child {
+        @apply rotate-45 transition-all;
+      }
+
+      &.opend > span:last-child {
+        @apply rotate-0 text-yellow-400 transition-all;
+      }
+
     }
 
-    .faq-wrapper{
+    .faq-wrapper {
       @apply max-w-full;
     }
   }

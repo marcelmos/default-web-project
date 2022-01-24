@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRightIcon, ExternalLinkIcon } from "@heroicons/react/outline";
+import { ChevronRightIcon, ExternalLinkIcon, XIcon } from "@heroicons/react/outline";
 
 export default function AboutMe(){
     // Section Logic
@@ -21,13 +21,8 @@ export default function AboutMe(){
         show.classList.add('show-element');
     }
 
-    /**
-     * NOTE FOR ME
-     * Clean up this mess below... make this element as reusable Component like Card.js component
-     */
-
     // Experience tabs logic and data
-    const faqData = [
+    const experienceData = [
         {
             question: <React.Fragment><span className="text-yellow-400">Junior Web Developer</span> | WebWolf | June 2021 - currently</React.Fragment>,
             answear: <React.Fragment>
@@ -39,8 +34,8 @@ export default function AboutMe(){
                 </ul>
                 <h3>Completed projects:</h3>
                 <ul>
-                    <li><a href="https://flixapple.com/" target="_blank" rel="noreferrer" className="external-link"><ExternalLinkIcon className="w-4 inline" /> flixapple.com</a></li> 
-                    <li><a href="https://www.eukc.pl/" target="_blank" rel="noreferrer" className="external-link"><ExternalLinkIcon className="w-4 inline" /> eukc.pl</a></li> 
+                    <li><a href="https://flixapple.com/" target="_blank" rel="noreferrer" className="external-link"><ExternalLinkIcon className="w-4 inline" /> flixapple.com</a></li>
+                    <li><a href="https://www.eukc.pl/" target="_blank" rel="noreferrer" className="external-link"><ExternalLinkIcon className="w-4 inline" /> eukc.pl</a></li>
                     <li><a href="https://www.paramed-group.pl/" target="_blank" rel="noreferrer" className="external-link"><ExternalLinkIcon className="w-4 inline" /> paramed-group.pl</a></li>
                 </ul></React.Fragment>,
         },
@@ -92,13 +87,13 @@ export default function AboutMe(){
             <h2 className='section-header'><span className="animate-on-scroll vertical-line"></span>About Me</h2>
 
             <div className="flex flex-col md:flex-row mt-8 md:h-700">
-                <div className="bg-white bg-opacity-20 flex flex-col justify-start p-5 sm:p-8 mr-5 w-full md:w-2/5 lg:w-1/4 rounded-2xl min-h-full">
+                <div className="bg-white bg-opacity-20 flex flex-col justify-start px-5 py-10 sm:p-8 mr-5 w-full md:w-2/5 lg:w-1/4 rounded-2xl min-h-full">
                     <div className="self-center">
                         <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 border-4 border-light w-250 h-250 max-w-250 max-h-250 object-cover rounded-full" />
                         <h2 className="text-4xl mt-5 text-center">Marcel Moś</h2>
                     </div>
 
-                    <div className="mt-8">
+                    <div className="mt-5">
                         <h3 className="about-us__btn selected" onClick={(event) => openContent('about-me', event.target.classList)}>Introduction <ChevronRightIcon className="w-10 h-10 text-yellow-400" /></h3>
                         <h3 className="about-us__btn" onClick={(event) => openContent('skills', event.target.classList)}>Skills <ChevronRightIcon className="w-10 h-10 text-yellow-400" /></h3>
                         <h3 className="about-us__btn" onClick={(event) => openContent('experience', event.target.classList)}>Experience <ChevronRightIcon className="w-10 h-10 " /></h3>
@@ -164,7 +159,7 @@ export default function AboutMe(){
                                 <p>React</p>
                             </li>
                         </ul>
-                        
+
                         <h3 className="text-xl mt-5">Tools known to me are:</h3>
                         <ul className="list-blocks">
                             <li>
@@ -192,14 +187,14 @@ export default function AboutMe(){
                             <li>Illustrator</li>
                             <li>XD</li>
                         </ul>
-                        
-                        Affinity: 
+
+                        Affinity:
                         <ul>
                             <li>Photo</li>
                             <li>Designer</li>
                             <li>Publisher</li>
                         </ul>
-                        
+
                         <p>With less relevant information I also had Driving licence (category B), and of course I can speak in English (Advanced)</p>
 
                     </div>
@@ -209,20 +204,21 @@ export default function AboutMe(){
                             My experience is't big soo probably i fit with then in fiew lines:
                         </p>
                         <div className="faq-wrapper mt-10">
-                            { faqData.map((el, index) => {
+                            { experienceData.map((el, index) => {
                                     return(
                                         <>
-                                            <div key={`conpany-${index}`} className="experience-company"
+                                            <div key={`conpany-${index}`} className="experience-company relative"
                                             onClick={(event) =>{
+                                                const el = event.target;
                                                 onShow(index);
 
-                                                if(event.target.classList.contains('opend')){
-                                                    event.target.classList.remove('opend');
+                                                if(el.classList.contains('opend')){
+                                                    el.classList.remove('opend');
                                                 }else{
-                                                    event.target.classList.add('opend');
+                                                    el.classList.add('opend');
                                                 }
                                             }}>
-                                                { el.question }
+                                                { el.question } <span className="absolute right-2"><XIcon className="w-6 h-6" /></span>
                                             </div>
                                             <div key={`conpany_details-${index}`} className="experience-details font-normal" data-key={`details-${index}`}>{ el.answear }</div>
                                         </>

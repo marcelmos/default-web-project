@@ -34,7 +34,7 @@ export default App;
 function onScroll(){
   const callback = function(entries) {
     entries.forEach(entry => {
-  
+
       if (entry.isIntersecting) {
         entry.target.classList.add("motion-safe:animate-slideIn");
       } else {
@@ -43,7 +43,7 @@ function onScroll(){
     });
   };
   const observer = new IntersectionObserver(callback);
-  
+
   const targets = document.querySelectorAll(".animate-on-scroll");
   targets.forEach(function(target) {
     target.classList.add("-translate-x-40");

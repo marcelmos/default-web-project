@@ -2,11 +2,11 @@
 
 export default function FormSection(){
 
-    const fitContent = (el) => {
-        console.log(el);
-        el.style.height = "1px";
-        el.style.height = (25+el.scrollHeight) + "px";
-    };
+    // const fitContent = (el) => {
+    //     console.log(el);
+    //     el.style.height = "1px";
+    //     el.style.height = (25+el.scrollHeight) + "px";
+    // };
 
     return(
         <section id="contact-section" className="py-20 px-5 md:px-24">

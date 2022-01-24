@@ -9,9 +9,9 @@ export default function Hero() {
                     <h2 className=" bg-coal-600 bg-opacity-50 md:bg-opacity-0 max-w-fit font-medium text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl border-l-[10px] md:border-l-[20px] border-yellow-400 px-4 pt-2 whitespace-nowrap">Hi, I'm Marcel<br />a <span className='text-yellow-400'>web developer</span><br/>from <span className='italic font-light'>Poland! </span>👋</h2>
                     <span className="h-1/2 border-r-4 md:border-r-white border-r-transparent absolute left-1/2 right-1/2"></span>
                 </div>
-                <div className="flex items-center justify-center max-h-screen overflow-hidden [ absolute top-0 md:top-auto md:relative ]">
+                <div className="hero-img flex items-center justify-center max-h-screen overflow-hidden [ absolute top-0 md:top-auto md:relative ]">
                     {/* <span className="absolute text-7xl rotate-45 opacity-80 text-red-500">TEMP IMAGE</span> */}
-                    <img src="/img/tempImg.jpg" className=" md:w-auto h-screen md:h-auto object-cover" alt="img" />
+                    <img src="/img/tempImg.jpg" className="md:w-auto h-screen md:h-auto object-cover" alt="img" />
                     <img src="/img/hero-pattern.svg" className="absolute -bottom-32 scale-[2] opacity-25 md:hidden" alt="" />
                 </div>
             </div>

@@ -40,21 +40,21 @@ export default function Footer( props ){
                             </a>
                         </li>
                     </ul>
-                    <p className="text-sm mt-5 hidden md:block">Designed and developed by Marcel Moś <br />
+                    <p className="text-sm mt-5 ml-3 hidden md:block">
                         <a href="https://github.com/marcelmos/default-web-project" target="_blank" rel="noreferrer" className="flex hover:text-yellow-400">
                             <CodeIcon className="w-5 mr-2" />
                             Check page source code
                         </a>
                     </p>
                 </div>
-                <p className="text-sm mt-5 col-start-1 col-end-4 text-center block md:hidden">Designed and developed by Marcel Moś <br />
+                <p className="text-sm mt-5 col-start-1 col-end-4 text-center block md:hidden">
                     <a href="https://github.com/marcelmos/default-web-project" target="_blank" rel="noreferrer" className="flex justify-center hover:text-yellow-400">
                         <CodeIcon className="w-5 mr-2" />
                         Check page source code
                     </a>
                 </p>
             </div>
-            <div className="bg-neutral-900 py-2 text-center"><span className="opacity-40">© {new Date().getFullYear()}</span></div>
+            <div className="bg-neutral-900 py-2 text-center"><span className="opacity-40">Designed and developed by Marcel Moś © {new Date().getFullYear()}</span></div>
         </footer>
     );
 }
