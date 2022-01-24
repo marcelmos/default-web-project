@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-coal-500 text-lg text-light m-0;
+}
+
+body main>section:nth-child(2n){
+    @apply bg-coal-600;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.active>a{
+  @apply font-bold border-l-4 border-yellow-400 px-2;
+}
+
+ul:hover>li>a{
+  @apply font-light border-l-transparent;
+}
+
+nav>ul>li>a{
+  @apply border-l-4 border-opacity-0 px-2;
+}
+nav>ul>li:hover>a{
+  @apply font-bold border-l-4 border-yellow-500 px-2;
+}
+
+form .form-input{
+  @apply border-2 border-transparent bg-transparent w-full my-7 py-5 px-6 text-2xl;
+  border-bottom: 4px solid #F4F2F0;
+  transition: border-color .1s;
+}
+form .form-input:focus{
+  @apply border-2 border-yellow-400 border-opacity-20 bg-coal-400 outline-none;
+  border-bottom: 4px solid #FACC15;
+  transition: border-color .1s;
+}
+
+.section-header{
+  @apply text-4xl xl:text-6xl border-l-8 border-yellow-400 font-bold pl-4;
+}
+
+.faq-wrapper{
+  @apply max-w-3xl;
+}
+.faq-question {
+  @apply w-full px-6 py-3 font-bold text-3xl bg-coal-600;
+}
+.faq-question.opend {
+  @apply bg-coal-700;
+}
+.faq-question.opend:hover {
+  @apply bg-coal-600;
+}
+.faq-question:hover {
+  @apply cursor-pointer bg-coal-700;
+}
+.faq-answear,
+.experience-details {
+  /* box-sizing: border-box; */
+  max-height: 0;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  @apply w-full py-0 px-11 border-b-2 border-yellow-400 mb-6 overflow-hidden box-border;
+}
+.faq-answear.show,
+.experience-details.show {
+  height: auto;
+  max-height: 50rem !important;
+  transition: all 1s ease;
+  @apply py-4;
+}
+
+#projects-section,
+#about-me-section,
+#contact-section,
+#faq-section {
+  @apply scroll-mt-5;
+}
+
+.about-us__btn {
+  @apply border-b-4 mt-6 border-yellow-400 border-opacity-25 text-3xl w-full flex justify-between transition-opacity cursor-pointer;
+}
+.about-us__btn:hover {
+  @apply border-opacity-50;
+}
+.about-us__btn>svg {
+  @apply text-yellow-400 opacity-25 transition-all;
+}
+.about-us__btn:hover>svg {
+  @apply opacity-50;
+}
+.about-us__btn.selected{
+  @apply border-opacity-100;
+}
+.about-us__btn.selected>svg{
+  @apply  opacity-100 rotate-180;
+}
+.about-us__content{
+  @apply text-lg cursor-pointer hidden;
+}
+.about-us__content>p{
+  @apply my-4;
+}
+.about-us__content ul{
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.show-element{
+  display: block;
+}

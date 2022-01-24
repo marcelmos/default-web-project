@@ -31,7 +31,7 @@ export default function FAQ(){
     // Render Section
     return(
         <section id="faq-section" className="py-20 px-24">
-            <h2 className='section-header'>FAQ</h2>
+            <h2 className='section-header'><span className="animate-on-scroll vertical-line"></span>FAQ</h2>
 
             <div className="mt-8">
 

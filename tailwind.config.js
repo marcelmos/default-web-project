@@ -4,18 +4,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      height: {
+      spacing: {
         '15': '3.75rem',
         'half-sreen': '50vh',
-      },
-      maxWidth: {
         "400": "400px",
         "250": "250px",
-      },
-      maxHeight: {
         '15': '3.75rem',
         "250": "250px",
-        "800": "800px"
+        "700": "700px",
+        "800": "800px",
       },
       "colors": {
         "coal": {
@@ -34,7 +31,19 @@ module.exports = {
         'hero-pattern': "url('/public/img/hero-pattern.svg')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       },
+      animation: {
+        slideIn: "slideIn .5s ease-in forwards"
+      },
+      keyframes: {
+        slideIn: {
+          "0%": { transform: "translateX(-40rem)" },
+          "100%": { transform: "translateX(0)" }
+        },
+      },
     },
   },
   plugins: [],
+  variants: {
+    animation: ["motion-safe"],
+  },
 }

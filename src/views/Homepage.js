@@ -2,7 +2,7 @@ import FormSection from '../components/sections/FormSection';
 import Hero from '../components/sections/Hero';
 import Projects from '../components/sections/Projects';
 import AboutMe from '../components/sections/AboutMe';
-import FAQ from '../components/sections/FAQ';
+// import FAQ from '../components/sections/FAQ';
 
 export default function Homepage(){
     return(
@@ -11,7 +11,7 @@ export default function Homepage(){
 
             <Projects />
 
-            <FAQ />
+            {/* <FAQ /> */}
 
             <AboutMe />
 
