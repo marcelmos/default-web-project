@@ -11,7 +11,7 @@ export default function Hero() {
                 </div>
                 <div className="hero-img flex items-center justify-center max-h-screen overflow-hidden [ absolute top-0 md:top-auto md:relative ]">
                     {/* <span className="absolute text-7xl rotate-45 opacity-80 text-red-500">TEMP IMAGE</span> */}
-                    <img src="/img/tempImg.jpg" className="md:w-auto h-screen md:h-auto object-cover" alt="img" />
+                    <img src="/img/tempImg.jpg" className="md:w-auto blur-sm h-screen md:h-auto object-cover" alt="img" />
                     <img src="/img/hero-pattern.svg" className="absolute -bottom-32 scale-[2] opacity-25 md:hidden" alt="" />
                 </div>
             </div>

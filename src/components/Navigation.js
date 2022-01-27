@@ -22,7 +22,7 @@ export default function Navigation(props){
         <>
             <nav className="sticky top-0 max-h-[90px] px-11 py-4 bg-coal-600 text-xl bg-opacity-75 z-50 hidden md:flex items-center justify-between">
                 <a href="/" className="nav-logo"><img src="/img/logo.svg" alt="default-web-logo" className="max-h-15" /></a>
-                <ul className="grid grid-cols-4 justify-center font-light max-w-[620px]">
+                <ul className="flex justify-center font-light max-w-[620px]">
                     {
                         navLinks.map((el, index) => {
                             return <li key={`nav_item-${index}`} className="px-4 mx-2 whitespace-nowrap w-full"><a href={el.link}>{el.title}</a></li>;

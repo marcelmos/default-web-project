@@ -47,8 +47,8 @@ export default function Footer( props ){
                         </a>
                     </p>
                 </div>
-                <p className="text-sm mt-5 col-start-1 col-end-4 text-center block md:hidden">
-                    <a href="https://github.com/marcelmos/default-web-project" target="_blank" rel="noreferrer" className="flex justify-center hover:text-yellow-400">
+                <p className="text-sm mt-5 col-start-2 col-end-4 text-left block md:hidden">
+                    <a href="https://github.com/marcelmos/default-web-project" target="_blank" rel="noreferrer" className="flex hover:text-yellow-400">
                         <CodeIcon className="w-5 mr-2" />
                         Check page source code
                     </a>

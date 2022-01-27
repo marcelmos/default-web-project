@@ -1,6 +1,6 @@
 
 
-export default function FormSection(){
+export default function ContactSection(){
 
     // const fitContent = (el) => {
     //     console.log(el);
@@ -11,8 +11,8 @@ export default function FormSection(){
     return(
         <section id="contact-section" className="py-20 px-5 md:px-24">
             <div className="max-w-3xl flex flex-col justify-center mx-auto">
-                <h2 className='text-6xl'>Interested?</h2>
-                <p className='text-4xl'>Just <span className="text-yellow-200">send message</span> to me at <span className="text-yellow-400 hover:text-yellow-500 hover:cursor-pointer"><a href="mailto:mosmarcel00@gmail.com">mosmarcel00@gmail.com</a></span> and let’s start <span className="italic text-yellow-200">talking...</span></p>
+                <h2 className='text-5xl sm:text-6xl mb-4 font-bold'>Interested?</h2>
+                <p className='text-2xl'>Just send message to me at <span className="text-yellow-400 hover:text-yellow-500 hover:cursor-pointer"><a href="mailto:mosmarcel00@gmail.com">mosmarcel00@gmail.com</a></span> and let’s start talking...</p>
 
                 {/* <form action="" className="flex flex-col">
                     <label><input type="email" className='form-input' placeholder="E-mail" /></label>

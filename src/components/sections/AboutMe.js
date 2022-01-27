@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRightIcon, ExternalLinkIcon, XIcon } from "@heroicons/react/outline";
+import { ExternalLinkIcon, XIcon, UserIcon, AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/outline";
 
 export default function AboutMe(){
     // Section Logic
@@ -24,7 +24,7 @@ export default function AboutMe(){
     // Experience tabs logic and data
     const experienceData = [
         {
-            question: <React.Fragment><span className="text-yellow-400">Junior Web Developer</span> | WebWolf | June 2021 - currently</React.Fragment>,
+            question: <React.Fragment><span className="text-yellow-400">Junior Web Developer</span> | June 2021 - January 2022 | WebWolf</React.Fragment>,
             answear: <React.Fragment>
                 <h3>My tasks:</h3>
                 <ul>
@@ -40,7 +40,7 @@ export default function AboutMe(){
                 </ul></React.Fragment>,
         },
         {
-            question: <React.Fragment><span className="text-yellow-400">IT Specialis</span> | Rozbark-Net | March 2021 - April 2021</React.Fragment>,
+            question: <React.Fragment><span className="text-yellow-400">IT Specialis</span> | March 2021 - April 2021 | Rozbark-Net</React.Fragment>,
             answear: <React.Fragment>
                 <h3>My tasks:</h3>
                 <ul>
@@ -49,7 +49,7 @@ export default function AboutMe(){
                 </ul></React.Fragment>,
         },
         {
-            question: <React.Fragment><span className="text-yellow-400">Seasonal worker and Trainee</span> | Frodo | Seasonal worker (2019 - 3 months), Trainee (2018 - 1 month)</React.Fragment>,
+            question: <React.Fragment><span className="text-yellow-400">Seasonal worker and Trainee</span> | Seasonal worker (2019 - 3 months), Trainee (2018 - 1 month) | Frodo</React.Fragment>,
             answear: <React.Fragment>
                 <h3>My tasks:</h3>
                 <ul>
@@ -59,7 +59,7 @@ export default function AboutMe(){
                 </ul></React.Fragment>,
         },
         {
-            question: <React.Fragment><span className="text-yellow-400">Intern</span> | Rozbark-Net | 2019 (1 month)</React.Fragment>,
+            question: <React.Fragment><span className="text-yellow-400">Intern</span> | 2019 (1 month) | Rozbark-Net</React.Fragment>,
             answear: <React.Fragment>
                 <h3>My tasks:</h3>
                 <ul>
@@ -86,41 +86,48 @@ export default function AboutMe(){
         <section id="about-me-section" className="py-20 px-5 md:px-24">
             <h2 className='section-header'><span className="animate-on-scroll vertical-line"></span>About Me</h2>
 
-            <div className="flex flex-col md:flex-row mt-8 md:h-700">
-                <div className="bg-white bg-opacity-20 flex flex-col justify-start px-5 py-10 sm:p-8 mr-5 w-full md:w-2/5 lg:w-1/4 rounded-2xl min-h-full">
-                    <div className="self-center">
-                        <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 border-4 border-light w-250 h-250 max-w-250 max-h-250 object-cover rounded-full" />
-                        <h2 className="text-4xl mt-5 text-center">Marcel Moś</h2>
-                    </div>
+            <div className="flex flex-col lg:flex-row mt-8 md:min-h-700 transition-all">
+                <div className="bg-white bg-opacity-20 px-5 sm:px-8 py-15  mr-5 w-full lg:w-2/5 xl:w-1/4 rounded-2xl min-h-full">
+                    <div className="sticky top-40 flex flex-col justify-start">
+                        <div className="self-center">
+                            <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 aspect-square blur-sm border-4 border-light w-250 max-w-250 max-h-250 object-cover rounded-full" />
+                            <h2 className="text-4xl mt-5 text-center">Marcel Moś</h2>
+                        </div>
 
-                    <div className="mt-5">
-                        <h3 className="about-us__btn selected" onClick={(event) => openContent('about-me', event.target.classList)}>Introduction <ChevronRightIcon className="w-10 h-10 text-yellow-400" /></h3>
-                        <h3 className="about-us__btn" onClick={(event) => openContent('skills', event.target.classList)}>Skills <ChevronRightIcon className="w-10 h-10 text-yellow-400" /></h3>
-                        <h3 className="about-us__btn" onClick={(event) => openContent('experience', event.target.classList)}>Experience <ChevronRightIcon className="w-10 h-10 " /></h3>
-                    </div>
+                        <div className="mt-5 hidden sm:block">
+                            <h3 className="about-us__btn selected" onClick={(event) => openContent('about-me', event.target.classList)}><UserIcon className="w-10 h-10" /> Introduction</h3>
+                            <h3 className="about-us__btn" onClick={(event) => openContent('skills', event.target.classList)}><AcademicCapIcon className="w-10 h-10" />Skills</h3>
+                            <h3 className="about-us__btn" onClick={(event) => openContent('experience', event.target.classList)}><BriefcaseIcon className="w-10 h-10" /> Experience</h3>
+                        </div>
 
+                        <div className="mt-5 block sm:hidden">
+                            <a href="#about-us__content" className="about-us__btn selected" onClick={(event) => openContent('about-me', event.target.classList)}><UserIcon className="w-10 h-10" /> Introduction</a>
+                            <a href="#about-us__content" className="about-us__btn" onClick={(event) => openContent('skills', event.target.classList)}><AcademicCapIcon className="w-10 h-10" />Skills</a>
+                            <a href="#about-us__content" className="about-us__btn" onClick={(event) => openContent('experience', event.target.classList)}><BriefcaseIcon className="w-10 h-10" /> Experience</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="about-us__content-wrapper bg-white bg-opacity-20 p-5 sm:px-8 md:px-10 lg:px-15 py-6 md:py-10 mt-5 md:mt-0 w-full md:w-3/5 lg:w-3/4 rounded-2xl min-h-full overflow-y-auto">
+                <div id="about-us__content" className="about-us__content-wrapper bg-white bg-opacity-20 p-5 sm:px-8 md:px-10 lg:px-15 py-6 md:py-10 mt-5 lg:mt-0 w-full lg:w-3/5 xl:w-3/4 rounded-2xl min-h-full">
                     <div className="about-us__content show-element" data-label="content-about-me">
                         <p>
-                            Hi! I'm Marcel, a self tought programmer interested and working as a Web Developer, mainly interested in Frontend technologies.
+                            Hi! I'm Marcel, a self tought programmer interested and working as a Web Developer, mainly focused in Frontend technologies.
                         </p>
                         <p>
-                            I'm also like Games, coupple of times I've tried to create my own game with use of Unity Engine, a fiew of most popular Game Engines.
+                            I like playing computer games and made attempts to create my own in Unity engine.
                         </p>
                         <p>
-                            In free time I like to create my own projects with use of new for me, popular and interesting technologies,
-                            frameworks and libralies like React or Tailwind. One of this project is this web site.
+                            In free time I like to create my own projects with new, popular and interesting technologies, frameworks and libralies 
+                            such as React, Tailwind, Slick JS and more. This very website is one of my projects.
                         </p>
                         <p>
-                            But I also like to do something different not only programming or coding.<br/>
-                            I like to draw digital arts, watching videos on YouTube or in VOD services, playing video games and of course listening music without this I can't live.
+                            But my life is not all about coding.<br />
+                            I like to draw digitally or traditionaly, watch videos on YouTube or in streaming services and of course listening music without this I can't live.
                         </p>
                     </div>
 
                     <div className="about-us__content" data-label="content-skills">
-                        <h3 className="text-xl">A technologies known to me which I use in my projects and job:</h3>
+                        <h3 className="text-xl">I use following technologies in project I work on:</h3>
                         <ul className="list-blocks">
                             <li>
                                 <img src="/img/brands/html.svg" alt="" />
@@ -160,7 +167,7 @@ export default function AboutMe(){
                             </li>
                         </ul>
 
-                        <h3 className="text-xl mt-5">Tools known to me are:</h3>
+                        <h3 className="text-xl mt-5">The tools I use:</h3>
                         <ul className="list-blocks">
                             <li>
                                 <img src="/img/brands/git.svg" alt="" />
@@ -180,34 +187,38 @@ export default function AboutMe(){
                             </li>
                         </ul>
 
-                        <h3 className="text-xl mt-5">Also I know Adobe and Affinity softwares.</h3>
-                        Adobe:
+                        <h3 className="text-xl mt-5">I know Adobe and Affinity softwares as well.</h3>
                         <ul>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>XD</li>
+                            <li><strong>Adobe:</strong>
+                                <ul>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>XD</li>
+                                </ul>
+                            </li>
+                            <li><strong>Affinity:</strong>
+                                <ul>
+                                    <li>Photo</li>
+                                    <li>Designer</li>
+                                    <li>Publisher</li>
+                                </ul>
+                            </li>
                         </ul>
 
-                        Affinity:
+                        <h3 className="text-xl mt-5">Other Information:</h3>
                         <ul>
-                            <li>Photo</li>
-                            <li>Designer</li>
-                            <li>Publisher</li>
+                            <li>I have a Driver's license (category B),</li>
+                            <li>I can communicate fluently in English</li>
                         </ul>
-
-                        <p>With less relevant information I also had Driving licence (category B), and of course I can speak in English (Advanced)</p>
 
                     </div>
 
                     <div className="about-us__content" data-label="content-experience">
-                        <p>
-                            My experience is't big soo probably i fit with then in fiew lines:
-                        </p>
                         <div className="faq-wrapper mt-10">
                             { experienceData.map((el, index) => {
                                     return(
                                         <>
-                                            <div key={`conpany-${index}`} className="experience-company relative"
+                                            <div key={`conpany-${index}`} className={`experience-company relative ${(index === 0) ? 'opend' : ''}`}
                                             onClick={(event) =>{
                                                 const el = event.target;
                                                 onShow(index);
@@ -220,7 +231,7 @@ export default function AboutMe(){
                                             }}>
                                                 { el.question } <span className="absolute right-2"><XIcon className="w-6 h-6" /></span>
                                             </div>
-                                            <div key={`conpany_details-${index}`} className="experience-details font-normal" data-key={`details-${index}`}>{ el.answear }</div>
+                                            <div key={`conpany_details-${index}`} className={`experience-details font-normal ${(index === 0) ? 'show' : ''}`} data-key={`details-${index}`}>{ el.answear }</div>
                                         </>
                                     );
                                 }) }

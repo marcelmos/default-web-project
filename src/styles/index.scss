@@ -48,34 +48,38 @@ nav{
 
 nav {
   ul {
-    &:hover {
-      li>a {
-        @apply font-light border-l-transparent;
-      }
-    }
 
     li {
+
       a {
         @apply border-l-4 border-opacity-0 px-2;
+        
+        &::before{
+          content: '';
+          @apply inline border-l-4 border-yellow-400 border-opacity-0 mr-2 transition-all;
+          transform: translateX(-50px);
+        }
       }
 
       &:hover {
         a {
-          @apply px-2 py-4;
+          @apply px-2 py-4 font-normal;
 
           &::before{
             content: '';
-            @apply inline border-l-4 border-yellow-400 mr-2;
+            @apply border-opacity-100 transition-all;
+            transform: translateX(0);
           }
         }
       }
 
       &.active>a {
-        @apply px-2 py-4;
+        @apply px-2 py-4 font-normal;
 
         &::before{
           content: '';
-          @apply inline border-l-4 border-yellow-400 mr-2;
+          @apply border-opacity-100 transition-all;
+          transform: translateX(0);
         }
       }
 
@@ -228,6 +232,7 @@ form {
   &.show {
     height: auto;
     max-height: 50rem !important;
+    border-top: 2px solid #F4F2F05D;
     transition: all 1s ease;
     @apply py-4;
   }
@@ -240,25 +245,25 @@ form {
   @apply scroll-mt-5;
 }
 
+#about-us__content {
+  @apply scroll-m-96;
+}
+
 .about-us{
 
   &__btn {
-    @apply border-b-4 mt-6 border-yellow-400 border-opacity-25 text-3xl w-full flex justify-between transition-opacity cursor-pointer;
+    @apply border-b-4 mt-6 border-yellow-400 opacity-25 text-3xl w-full flex transition-opacity cursor-pointer;
 
     &:hover{
-      @apply border-opacity-50;
-
-      svg{
-        @apply opacity-40;
-      }
+      @apply opacity-75;
     }
 
     svg{
-      @apply text-yellow-400 opacity-10 transition-all;
+      @apply text-yellow-400 mr-2 transition-all;
     }
 
     &.selected{
-      @apply border-opacity-100;
+      @apply opacity-100;
 
       svg {
         @apply  opacity-100;
@@ -299,7 +304,7 @@ form {
         @apply grid grid-cols-2 sm:flex sm:flex-wrap ml-0;
 
         li{
-          @apply  flex flex-col m-5;
+          @apply  flex flex-col justify-center m-2;
 
           span {
             @apply flex items-center;
@@ -337,7 +342,7 @@ form {
     }
 
     .experience-company {
-      @apply cursor-pointer;
+      @apply cursor-pointer pb-2;
 
       span:last-child {
         @apply rotate-45 transition-all;

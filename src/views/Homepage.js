@@ -1,4 +1,4 @@
-import FormSection from '../components/sections/FormSection';
+import ContactSection from '../components/sections/ContactSection';
 import Hero from '../components/sections/Hero';
 import Projects from '../components/sections/Projects';
 import AboutMe from '../components/sections/AboutMe';
@@ -15,7 +15,7 @@ export default function Homepage(){
 
             <AboutMe />
 
-            <FormSection />
+            <ContactSection />
         </main>
     );
 }
