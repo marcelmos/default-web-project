@@ -53,7 +53,7 @@ nav {
 
       a {
         @apply border-l-4 border-opacity-0 px-2;
-        
+
         &::before{
           content: '';
           @apply inline border-l-4 border-yellow-400 border-opacity-0 mr-2 transition-all;
@@ -249,20 +249,20 @@ form {
   @apply scroll-m-96;
 }
 
-.about-us{
+.about-us {
 
   &__btn {
     @apply border-b-4 mt-6 border-yellow-400 opacity-25 text-3xl w-full flex transition-opacity cursor-pointer;
 
-    &:hover{
+    &:hover {
       @apply opacity-75;
     }
 
-    svg{
+    svg {
       @apply text-yellow-400 mr-2 transition-all;
     }
 
-    &.selected{
+    &.selected {
       @apply opacity-100;
 
       svg {
@@ -286,14 +286,14 @@ form {
 
     a.external-link{
 
-      svg{
+      svg {
         @apply opacity-50;
       }
 
-      &:hover{
+      &:hover {
         @apply text-yellow-400;
 
-        svg{
+        svg {
           @apply opacity-80;
         }
       }

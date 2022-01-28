@@ -86,8 +86,8 @@ export default function AboutMe(){
         <section id="about-me-section" className="py-20 px-5 md:px-24">
             <h2 className='section-header'><span className="animate-on-scroll vertical-line"></span>About Me</h2>
 
-            <div className="flex flex-col lg:flex-row mt-8 md:min-h-700 transition-all">
-                <div className="bg-white bg-opacity-20 px-5 sm:px-8 py-15  mr-5 w-full lg:w-2/5 xl:w-1/4 rounded-2xl min-h-full">
+            <div className="content__wrapper flex flex-col lg:flex-row mt-8 md:min-h-700">
+                <div className="bg-white bg-opacity-20 px-5 sm:px-8 py-15  mr-5 w-full lg:w-2/5 xl:w-1/4 rounded-2xl">
                     <div className="sticky top-40 flex flex-col justify-start">
                         <div className="self-center">
                             <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 aspect-square blur-sm border-4 border-light w-250 max-w-250 max-h-250 object-cover rounded-full" />
@@ -108,7 +108,7 @@ export default function AboutMe(){
                     </div>
                 </div>
 
-                <div id="about-us__content" className="about-us__content-wrapper bg-white bg-opacity-20 p-5 sm:px-8 md:px-10 lg:px-15 py-6 md:py-10 mt-5 lg:mt-0 w-full lg:w-3/5 xl:w-3/4 rounded-2xl min-h-full">
+                <div id="about-us__content" className="about-us__content-wrapper bg-white bg-opacity-20 p-5 sm:px-8 md:px-10 lg:px-15 py-6 md:py-10 mt-5 lg:mt-0 w-full lg:w-3/5 xl:w-3/4 rounded-2xl">
                     <div className="about-us__content show-element" data-label="content-about-me">
                         <p>
                             Hi! I'm Marcel, a self tought programmer interested and working as a Web Developer, mainly focused in Frontend technologies.
@@ -117,7 +117,7 @@ export default function AboutMe(){
                             I like playing computer games and made attempts to create my own in Unity engine.
                         </p>
                         <p>
-                            In free time I like to create my own projects with new, popular and interesting technologies, frameworks and libralies 
+                            In free time I like to create my own projects with new, popular and interesting technologies, frameworks and libralies
                             such as React, Tailwind, Slick JS and more. This very website is one of my projects.
                         </p>
                         <p>
