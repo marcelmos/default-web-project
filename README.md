@@ -4,7 +4,7 @@ This is project of my web site. I decided to recreate and redesign it into React
 
 ## How to preview
 
-Visit my web site [defaultweb.epizy.com](http://defaultweb.epizy.com)
+Visit my web site [drasticweb.net](http://drasticweb.net)
 
 Or just see the latest build version [LINK](https://adoring-minsky-756dbc.netlify.app) (Not stable) \
 \
