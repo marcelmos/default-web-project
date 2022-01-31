@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
-import Rellax from "rellax";
 
 export default function Navigation(props){
     const navLinks = props.navData;
