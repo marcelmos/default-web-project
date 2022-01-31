@@ -1,22 +1,71 @@
 import { ArrowDownIcon } from "@heroicons/react/outline";
+import { FaBootstrap, FaCss3Alt, FaFigma, FaGit, FaGithub, FaHtml5, FaJs, FaPhp, FaReact, FaSass, FaWordpress } from "react-icons/fa";
+import { DiMysql, DiJqueryLogo } from "react-icons/di";
+import { SiPhpmyadmin, SiTailwindcss } from "react-icons/si";
 
 
 export default function Hero() {
     return(
-        <section id="home-section" className="px-0 md:px-12 xl:px-24 py-24 h-full min-h-screen max-h-screen bg-hero-pattern bg-right-bottom bg-no-repeat bg-opacity-25 flex flex-col justify-center">
+        <section id="home-section" className="px-0 md:px-12 xl:px-24 py-24 h-full min-h-screen max-h-screen flex flex-col justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 max-h-screen">
                 <div className="flex flex-col justify-center z-40 px-5">
-                    <h2 className=" bg-coal-600 bg-opacity-50 md:bg-opacity-0 max-w-fit font-medium text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl border-l-[10px] md:border-l-[20px] border-yellow-400 px-4 pt-2 whitespace-nowrap">Hi, I'm Marcel<br />a <span className='text-yellow-400'>web developer</span><br/>from <span className='italic font-light'>Poland! </span>👋</h2>
+                    <h2 className="rellax  bg-coal-600 bg-opacity-50 md:bg-opacity-0 max-w-fit font-medium text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl border-l-[10px] md:border-l-[20px] border-yellow-400 px-4 pt-2 whitespace-nowrap" data-rellax-speed="-4">Hi, I'm Marcel<br />a <span className='text-yellow-400'>web developer</span><br/>from <span className='italic font-light'>Poland! </span>👋</h2>
                     <span className="h-1/2 border-r-4 md:border-r-white border-r-transparent absolute left-1/2 right-1/2"></span>
                 </div>
-                <div className="hero-img flex items-center justify-center max-h-screen overflow-hidden [ absolute top-0 md:top-auto md:relative ]">
-                    {/* <span className="absolute text-7xl rotate-45 opacity-80 text-red-500">TEMP IMAGE</span> */}
-                    <img src="/img/tempImg.jpg" className="md:w-auto blur-sm h-screen md:h-auto object-cover" alt="img" />
-                    <img src="/img/hero-pattern.svg" className="absolute -bottom-32 scale-[2] opacity-25 md:hidden" alt="" />
+                <div className="hero-img flex items-center justify-center h-full max-h-screen relative">
+                    <div className="hero-img__icons -bottom-15 md:bottom-auto opacity-50 md:opacity-100">
+                        <span className="rellax absolute -bottom-12 left-2/12" data-rellax-speed="1">
+                            <FaBootstrap className="w-15 h-15" />
+                        </span>
+                        <span className="rellax absolute -bottom-28 left-5/12" data-rellax-speed="5">
+                            <FaCss3Alt />
+                        </span>
+                        <span className="rellax absolute z-50 bottom-20 left-1/12" data-rellax-speed="7">
+                            <FaFigma />
+                        </span>
+                        <span className="rellax absolute bottom-10 left-8/12" data-rellax-speed="3">
+                            <FaGit />
+                        </span>
+                        <span className="rellax absolute z-50 bottom-52 right-1/12" data-rellax-speed="4">
+                            <FaGithub />
+                        </span>
+                        <span className="rellax absolute z-50 bottom-12 left-11/12" data-rellax-speed="8">
+                            <FaHtml5 />
+                        </span>
+                        <span className="rellax absolute bottom-40 left-7/12" data-rellax-speed="10">
+                            <DiJqueryLogo />
+                        </span>
+                        <span className="rellax absolute -bottom-64 left-3/12" data-rellax-speed="8">
+                            <FaJs />
+                        </span>
+                        <span className="rellax absolute z-50 bottom-24 left-5/12" data-rellax-speed="2">
+                            <DiMysql />
+                        </span>
+                        <span className="rellax absolute -bottom-32 left-8/12" data-rellax-speed="9">
+                            <FaPhp />
+                        </span>
+                        <span className="rellax absolute z-50 -bottom-1 left-10/12" data-rellax-speed="7">
+                            <SiPhpmyadmin />
+                        </span>
+                        <span className="rellax absolute bottom-9 left-4/12" data-rellax-speed="1">
+                            <FaReact />
+                        </span>
+                        <span className="rellax absolute z-50 bottom-0 left-6/12" data-rellax-speed="2">
+                            <FaSass />
+                        </span>
+                        <span className="rellax absolute -bottom-28 left-11/12" data-rellax-speed="5">
+                            <SiTailwindcss />
+                        </span>
+                        <span className="rellax absolute z-50 bottom-64 left-4/12" data-rellax-speed="6">
+                            <FaWordpress />
+                        </span>
+                    </div>
+                    <img src="/img/hero-pattern.svg" className="rellax absolute -bottom-32 md:-bottom-full md:-right-24 scale-[2] md:scale-[6] opacity-100 hidden md:block -z-20" data-rellax-speed="-2" alt="" />
+                    <img src="/img/hero-pattern.svg" className="rellax absolute -bottom-32 md:-bottom-[105%] md:-right-24 scale-[2] md:scale-[6] opacity-25 -z-10" data-rellax-speed="-5" alt="" />
                 </div>
             </div>
 
-            <div className="absolute bottom-2.5 md:bottom-10 right-0 left-0">
+            <div className="absolute bottom-2.5 md:bottom-10 right-0 left-0 z-50">
                 <a href="#projects-section" className=' max-w-[60px] mx-auto flex justify-center hover:text-yellow-500'><ArrowDownIcon className='w-10 animate-bounce' /></a>
             </div>
         </section>

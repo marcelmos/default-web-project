@@ -1,5 +1,9 @@
 import React from "react";
 import { ExternalLinkIcon, XIcon, UserIcon, AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/outline";
+import { FaBootstrap, FaCss3Alt, FaFigma, FaGit, FaGithub, FaHtml5, FaJs, FaPhp, FaReact, FaSass, FaWordpress } from "react-icons/fa";
+import { DiMysql, DiJqueryLogo } from "react-icons/di";
+import { SiPhpmyadmin, SiTailwindcss } from "react-icons/si";
+
 
 export default function AboutMe(){
     // Section Logic
@@ -90,8 +94,8 @@ export default function AboutMe(){
                 <div className="bg-white bg-opacity-20 px-5 sm:px-8 py-15  mr-5 w-full lg:w-2/5 xl:w-1/4 rounded-2xl">
                     <div className="sticky top-40 flex flex-col justify-start">
                         <div className="self-center">
-                            <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 aspect-square blur-sm border-4 border-light w-250 max-w-250 max-h-250 object-cover rounded-full" />
-                            <h2 className="text-4xl mt-5 text-center">Marcel Moś</h2>
+                            {/* <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 aspect-square blur-sm border-4 border-light w-250 max-w-250 max-h-250 object-cover rounded-full" />
+                            <h2 className="text-4xl mt-5 text-center">Marcel Moś</h2> */}
                         </div>
 
                         <div className="mt-5 hidden sm:block">
@@ -130,39 +134,39 @@ export default function AboutMe(){
                         <h3 className="text-xl">I use following technologies in project I work on:</h3>
                         <ul className="list-blocks">
                             <li>
-                                <img src="/img/brands/html.svg" alt="" />
+                                <FaHtml5 />
                                 <p>HTML</p>
                             </li>
                             <li>
-                                <span><img src="/img/brands/css.svg" alt="" /> / <img src="/img/brands/sass.svg" alt="" /></span>
+                                <span><FaCss3Alt /> / <FaSass /></span>
                                 <p>CSS/SASS</p>
                             </li>
                             <li>
-                                <img src="/img/brands/js.svg" alt="" />
+                                <FaJs />
                                 <p>JavaScript</p>
                             </li>
                             <li>
-                            <span><img src="/img/brands/php.svg" alt="" /> / <img src="/img/brands/mysql.svg" alt="" /></span>
+                            <span><FaPhp /> / <DiMysql /></span>
                                 <p>PHP + MySQL</p>
                             </li>
                             <li>
-                                <img src="/img/brands/bootstrap.svg" alt="" />
+                                <FaBootstrap />
                                 <p>Bootstrap</p>
                             </li>
                             <li>
-                                <img src="/img/brands/tailwindcss.svg" className="negative" alt="" />
+                                <SiTailwindcss />
                                 <p>Tailwind CSS</p>
                             </li>
                             <li>
-                                <img src="/img/brands/wordpress.svg" alt="" />
+                                <FaWordpress />
                                 <p>WordPress</p>
                             </li>
                             <li>
-                                <img src="/img/brands/jquery.svg" alt="" />
+                                <DiJqueryLogo />
                                 <p>jQuery</p>
                             </li>
                             <li>
-                                <img src="/img/brands/react.svg" alt="" />
+                                <FaReact />
                                 <p>React</p>
                             </li>
                         </ul>
@@ -170,19 +174,19 @@ export default function AboutMe(){
                         <h3 className="text-xl mt-5">The tools I use:</h3>
                         <ul className="list-blocks">
                             <li>
-                                <img src="/img/brands/git.svg" alt="" />
+                                <FaGit />
                                 <p>GIT</p>
                             </li>
                             <li>
-                                <img src="/img/brands/github.svg" alt="" />
+                                <FaGithub />
                                 <p>GitHub</p>
                             </li>
                             <li>
-                                <img src="/img/brands/phpmyadmin.svg" className="negative" alt="" />
+                                <SiPhpmyadmin />
                                 <p>phpMyAdmin</p>
                             </li>
                             <li>
-                                <img src="/img/brands/figma.svg" alt="" />
+                                <FaFigma />
                                 <p>Figma</p>
                             </li>
                         </ul>
