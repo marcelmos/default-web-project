@@ -8,13 +8,13 @@ export default function Projects(){
         {
             image: '/img/wp-todo-list-preview.png',
             title: 'WP ToDo List Plugin',
-            description: `A small WordPress plugin. It's my first WP plugin which I created. I hope to have time and ideas for updating and upgrade this project succesfully. If not reqruitment task probably I've never would to start to create my own plugin, it was really fun to create it and to learn some new stuff too! 😃`,
+            description: `A small WordPress plugin. It's my first WP plugin which I created. I hope to have time and ideas for updating and upgrade this project succesfully. If not reqruitment task I've probably never would to start to create my own plugin, it was really fun to create it and to learn some new stuff too! 😃`,
             link: 'https://github.com/marcelmos/wp-todo-list-plugin'
         },
         {
             image: '/img/oxygen-cms-preview.png',
             title: 'Oxygen CMS',
-            description: `One of my biggest/smallest projects, a own Content Menagment System. I base my self on WordPress CMS, becouse its well known by the community and its easy, but WP don't had some of functions which I need, then I decided to create my own CMS. More flexible, easier and maybe lighter. Plus this project is really good for learning new things.`,
+            description: `One of my biggest/smallest projects, a own Content Management System. I base my self on WordPress CMS, becouse its well known by the community and its easy, but WP don't had some of functions which I need, then I decided to create my own CMS. More flexible, easier and maybe lighter. Plus this project is really good for learning new things on backend side.`,
             link: 'https://github.com/marcelmos/oxygen-cms'
         },
         {

@@ -91,20 +91,20 @@ export default function AboutMe(){
             <h2 className='section-header'><span className="animate-on-scroll vertical-line"></span>About Me</h2>
 
             <div className="content__wrapper flex flex-col lg:flex-row mt-8 md:min-h-700">
-                <div className="bg-white bg-opacity-20 px-5 sm:px-8 py-15  mr-5 w-full lg:w-2/5 xl:w-1/4 rounded-2xl">
+                <div className="bg-white bg-opacity-20 px-5 sm:px-8 py-10 sm:py-15  mr-5 w-full lg:w-2/5 xl:w-1/4 rounded-2xl">
                     <div className="sticky top-40 flex flex-col justify-start">
-                        <div className="self-center">
-                            {/* <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 aspect-square blur-sm border-4 border-light w-250 max-w-250 max-h-250 object-cover rounded-full" />
-                            <h2 className="text-4xl mt-5 text-center">Marcel Moś</h2> */}
-                        </div>
+                        {/* <div className="self-center mb-5">
+                            <img src="/img/tempImg.jpg" alt="" className="bg-gray-400 aspect-square blur-sm border-4 border-light w-250 max-w-250 max-h-250 object-cover rounded-full" />
+                            <h2 className="text-4xl mt-5 text-center">Marcel Moś</h2>
+                        </div> */}
 
-                        <div className="mt-5 hidden sm:block">
+                        <div className="hidden sm:block">
                             <h3 className="about-us__btn selected" onClick={(event) => openContent('about-me', event.target.classList)}><UserIcon className="w-10 h-10" /> Introduction</h3>
                             <h3 className="about-us__btn" onClick={(event) => openContent('skills', event.target.classList)}><AcademicCapIcon className="w-10 h-10" />Skills</h3>
                             <h3 className="about-us__btn" onClick={(event) => openContent('experience', event.target.classList)}><BriefcaseIcon className="w-10 h-10" /> Experience</h3>
                         </div>
 
-                        <div className="mt-5 block sm:hidden">
+                        <div className="block sm:hidden">
                             <a href="#about-us__content" className="about-us__btn selected" onClick={(event) => openContent('about-me', event.target.classList)}><UserIcon className="w-10 h-10" /> Introduction</a>
                             <a href="#about-us__content" className="about-us__btn" onClick={(event) => openContent('skills', event.target.classList)}><AcademicCapIcon className="w-10 h-10" />Skills</a>
                             <a href="#about-us__content" className="about-us__btn" onClick={(event) => openContent('experience', event.target.classList)}><BriefcaseIcon className="w-10 h-10" /> Experience</a>
@@ -221,7 +221,7 @@ export default function AboutMe(){
                         <div className="faq-wrapper mt-10">
                             { experienceData.map((el, index) => {
                                     return(
-                                        <>
+                                        <div key={index}>
                                             <div key={`conpany-${index}`} className={`experience-company relative ${(index === 0) ? 'opend' : ''}`}
                                             onClick={(event) =>{
                                                 const el = event.target;
@@ -236,7 +236,7 @@ export default function AboutMe(){
                                                 { el.question } <span className="absolute right-2"><XIcon className="w-6 h-6" /></span>
                                             </div>
                                             <div key={`conpany_details-${index}`} className={`experience-details font-normal ${(index === 0) ? 'show' : ''}`} data-key={`details-${index}`}>{ el.answear }</div>
-                                        </>
+                                        </div>
                                     );
                                 }) }
                         </div>

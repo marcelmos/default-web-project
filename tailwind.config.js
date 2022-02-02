@@ -46,8 +46,8 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/public/img/hero-pattern.svg')",
-        'waves-bottom': "url('/public/img/waves-bottom.svg')",
-        'waves-bottom-dark': "url('/public/img/waves-bottom-dark.svg')",
+        'waves-bottom': "url('/public/img/waves/waves-bottom.svg')",
+        'waves-bottom-dark': "url('/public/img/waves/waves-bottom-dark.svg')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       },
       animation: {

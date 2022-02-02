@@ -353,7 +353,7 @@ form {
     }
 
     .experience-company {
-      @apply cursor-pointer pb-2;
+      @apply cursor-pointer pb-2 transition-colors;
 
       span:last-child {
         @apply rotate-45 transition-all;
@@ -361,6 +361,13 @@ form {
 
       &.opend > span:last-child {
         @apply rotate-0 text-yellow-400 transition-all;
+      }
+
+      &:hover {
+        @apply text-gray-300 transition-colors;
+        span {
+          @apply text-yellow-500;
+        }
       }
 
     }

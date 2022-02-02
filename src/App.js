@@ -14,11 +14,7 @@ function App() {
     const rellax = new Rellax('.rellax', {
       center: true,
     });
-    const rellaxCta = new Rellax('.rellax', {
-      center: true,
-      wrapper: '.cta-rellax',
-    });
-  }, [])
+  }, []);
 
   const navLinks = [
     {title: 'Start' , link: 'home-section'},
