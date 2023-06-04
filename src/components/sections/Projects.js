@@ -27,7 +27,7 @@ export default function Projects(){
 
     // Render Section
     return(
-        <section id="projects-section" className="py-20 px-5 md:px-24">
+        <section id="projects-section" className="py-20 px-5 md:px-24 xl:px-2/12">
             <h2 className='section-header'><span className="animate-on-scroll vertical-line"></span>Projects</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 mt-8">

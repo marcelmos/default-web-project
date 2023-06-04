@@ -28,6 +28,16 @@ export default function AboutMe(){
     // Experience tabs logic and data
     const experienceData = [
         {
+            question: <React.Fragment><span className="text-yellow-400">Junior Software Developer</span> | March 2022 - Actual work | JLL</React.Fragment>,
+            answear: <React.Fragment>
+                <h3>My tasks:</h3>
+                <ul>
+                    <li>Developing new functionalities, fixing and update content in internal web application depending of internal needs.</li>
+                    <li>Active communication with team and people belonging to the organization</li>
+                </ul>
+                </React.Fragment>,
+        },
+        {
             question: <React.Fragment><span className="text-yellow-400">Junior Web Developer</span> | June 2021 - January 2022 | WebWolf</React.Fragment>,
             answear: <React.Fragment>
                 <h3>My tasks:</h3>
@@ -87,7 +97,7 @@ export default function AboutMe(){
 
     // Render Section
     return(
-        <section id="about-me-section" className="py-20 px-5 md:px-24">
+        <section id="about-me-section" className="py-20 px-5 md:px-24 xl:px-2/12">
             <h2 className='section-header'><span className="animate-on-scroll vertical-line"></span>About Me</h2>
 
             <div className="content__wrapper flex flex-col lg:flex-row mt-8 md:min-h-700">
