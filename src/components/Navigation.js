@@ -51,7 +51,7 @@ export default function Navigation(props){
     return(
 
         <>
-            <nav id="navigation" className="sticky top-0 max-h-[90px] px-11 py-4 bg-coal-600 text-xl bg-opacity-75 z-top hidden md:flex items-center justify-between">
+            <nav id="navigation" className="sticky top-0 max-h-[90px] px-11 xl:px-3/12 py-4 bg-coal-600 text-xl bg-opacity-75 z-top hidden md:flex items-center justify-between">
                 <a href="/" className="nav-logo"><img src="/img/logo.svg" alt="default-web-logo" className="max-h-15" /></a>
                 <ul className="nav-list flex justify-center font-light max-w-[620px]">
                     {
