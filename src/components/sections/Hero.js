@@ -1,3 +1,4 @@
+import React from "react";
 import { ArrowDownIcon } from "@heroicons/react/outline";
 import HeroParallax from "../HeroParallax";
 

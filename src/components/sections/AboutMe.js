@@ -4,7 +4,6 @@ import { FaBootstrap, FaCss3Alt, FaFigma, FaGit, FaGithub, FaHtml5, FaJs, FaPhp,
 import { DiMysql, DiJqueryLogo } from "react-icons/di";
 import { SiPhpmyadmin, SiTailwindcss } from "react-icons/si";
 
-
 export default function AboutMe(){
     // Section Logic
     const openContent = (data, target) => {
@@ -82,6 +81,7 @@ export default function AboutMe(){
         }else{
             div.classList.add('show');
         }
+        rellax.refresh();
     }
 
 

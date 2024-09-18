@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 
 export default function Navigation(props){

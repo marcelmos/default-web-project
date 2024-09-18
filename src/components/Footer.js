@@ -1,3 +1,4 @@
+import React from "react";
 import { CodeIcon } from "@heroicons/react/outline";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 

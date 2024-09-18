@@ -1,3 +1,4 @@
+import React from "react";
 import { FaBootstrap, FaCss3Alt, FaFigma, FaGit, FaGithub, FaHtml5, FaJs, FaPhp, FaReact, FaSass, FaWordpress } from "react-icons/fa";
 import { DiMysql, DiJqueryLogo } from "react-icons/di";
 import { SiPhpmyadmin, SiTailwindcss } from "react-icons/si";
